@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fidgetSpinnerMaker">
+
+
+    <RadioGroup
+        android:id="@+id/colorGroup"
+        android:layout_width="100dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="368dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+            <RadioButton
+                android:id="@+id/greenRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Green"
+                app:layout_constraintStart_toStartOf="@+id/blueRadio"
+                app:layout_constraintTop_toBottomOf="@+id/blueRadio" />
+
+            <RadioButton
+                android:id="@+id/redRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Red"
+                app:layout_constraintStart_toStartOf="@+id/colorGroup"
+                app:layout_constraintTop_toTopOf="@+id/colorGroup" />
+
+            <RadioButton
+                android:id="@+id/blueRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Blue"
+                app:layout_constraintStart_toStartOf="@+id/redRadio"
+                app:layout_constraintTop_toBottomOf="@+id/redRadio" />
+    </RadioGroup>
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
