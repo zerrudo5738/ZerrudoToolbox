@@ -8,38 +8,63 @@
 
 
     <RadioGroup
-        android:id="@+id/colorGroup"
-        android:layout_width="100dp"
-        android:layout_height="106dp"
-        android:layout_marginStart="252dp"
-        android:layout_marginTop="368dp"
+        android:id="@+id/radioGroup"
+        android:layout_width="108dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="388dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
-            <RadioButton
-                android:id="@+id/greenRadio"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Green"
-                app:layout_constraintStart_toStartOf="@+id/blueRadio"
-                app:layout_constraintTop_toBottomOf="@+id/blueRadio" />
+        app:layout_constraintTop_toTopOf="parent">
 
-            <RadioButton
-                android:id="@+id/redRadio"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:text="Red"
-                app:layout_constraintStart_toStartOf="@+id/colorGroup"
-                app:layout_constraintTop_toTopOf="@+id/colorGroup" />
 
-            <RadioButton
-                android:id="@+id/blueRadio"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="Blue"
-                app:layout_constraintStart_toStartOf="@+id/redRadio"
-                app:layout_constraintTop_toBottomOf="@+id/redRadio" />
+        <RadioButton
+            android:id="@+id/redRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Red" />
+
+        <RadioButton
+            android:id="@+id/greenRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green" />
+
+        <RadioButton
+            android:id="@+id/blueRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blue" />
+
     </RadioGroup>
-        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="327dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fidgetspinnerlogo" />
+
+    <TextView
+        android:id="@+id/colorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a Color:"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup" />
+
+    <Switch
+        android:id="@+id/jetSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="16dp"
+        android:text="Jet Engines"
+        app:layout_constraintStart_toEndOf="@+id/colorLabel"
+        app:layout_constraintTop_toTopOf="@+id/colorLabel" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
