@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">ZerrudoToolbox</string>
+    <string name="Red">Red</string>
+    <string name="Blue">Blue</string>
+    <string name="Green">Green</string>
+
+    <string name="Sticker">Stickers</string>
+    <string name="Glitter">Glitter</string>
+    <string name="Parmesan">Parmesan</string>
+
+    <string name="CookSpinner">How would you like your Spinner?</string>
+    <string-array name="CookSpin">
+        <item>Rare</item>
+        <item>Medium Rare</item>
+        <item>Medium</item>
+        <item>Medium Well</item>
+        <item>Well Done</item>
+    </string-array>
+
 </resources>
