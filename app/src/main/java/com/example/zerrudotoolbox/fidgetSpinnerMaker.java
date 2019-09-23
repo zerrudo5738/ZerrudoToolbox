@@ -46,6 +46,7 @@ public class fidgetSpinnerMaker extends AppCompatActivity implements AdapterView
         stickerBox = (CheckBox) findViewById(R.id.stickerBox);
         jetSwitch = (Switch) findViewById(R.id.jetSwitch);
 
+        // radio group
         this.radioGroupPhoto.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 
             @Override
