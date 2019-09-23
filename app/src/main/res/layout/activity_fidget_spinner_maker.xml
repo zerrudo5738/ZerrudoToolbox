@@ -4,15 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fidgetSpinnerMaker">
+    tools:context=".fidgetSpinnerMaker"
+    android:background="@color/colorPrimaryDark">
 
 
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="104dp"
         android:layout_height="119dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="144dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="100dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -38,16 +39,6 @@
 
     </RadioGroup>
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="327dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fidgetspinnerlogo" />
-
     <TextView
         android:id="@+id/colorLabel"
         android:layout_width="wrap_content"
@@ -57,18 +48,20 @@
         app:layout_constraintStart_toStartOf="@+id/radioGroup" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/cheeseBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Parmesan"
-        app:layout_constraintStart_toStartOf="@+id/checkBox3"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+        android:onClick="cheeseCheck"
+        app:layout_constraintStart_toStartOf="@+id/glitterBox"
+        app:layout_constraintTop_toBottomOf="@+id/glitterBox" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/glitterBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Glitter"
+        android:onClick="glitterCheck"
         app:layout_constraintStart_toStartOf="@+id/stickerBox"
         app:layout_constraintTop_toBottomOf="@+id/stickerBox" />
 
@@ -77,6 +70,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Sticker"
+        android:onClick="stickerCheck"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -94,8 +88,8 @@
         android:id="@+id/jetSwitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="12dp"
         android:text="Jet Engines"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
@@ -108,6 +102,73 @@
         android:text="Toppings:"
         app:layout_constraintStart_toEndOf="@+id/colorLabel"
         app:layout_constraintTop_toTopOf="@+id/colorLabel" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:text="Fidget Spinner Customizer"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewPhoto"
+        android:layout_width="259dp"
+        android:layout_height="274dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cookSpinner"
+        app:srcCompat="@drawable/fidgetspinner" />
+
+    <ImageView
+        android:id="@+id/cooked"
+        android:layout_width="269dp"
+        android:layout_height="237dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewPhoto"
+        app:srcCompat="@drawable/rare" />
+
+    <ImageView
+        android:id="@+id/glitterPic"
+        android:layout_width="364dp"
+        android:layout_height="221dp"
+        android:layout_marginEnd="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cooked"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/cheesePic"
+        android:layout_width="364dp"
+        android:layout_height="221dp"
+        android:layout_marginEnd="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cooked"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/stickerPic"
+        android:layout_width="364dp"
+        android:layout_height="221dp"
+        android:layout_marginEnd="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cooked"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/jetPic"
+        android:layout_width="217dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintStart_toStartOf="@+id/imageViewPhoto"
+        app:layout_constraintTop_toTopOf="@+id/stickerPic"
+        app:srcCompat="@drawable/empty" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
